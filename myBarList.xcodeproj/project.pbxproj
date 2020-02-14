@@ -3,21 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1DF75947180E525D4C13EF /* Pods_myBarList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A687BC1F5E7FE3808D8D26 /* Pods_myBarList.framework */; };
 		A04076EE23E95DD9001A4EDB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04076ED23E95DD9001A4EDB /* SearchViewController.swift */; };
+		A04076F123EBDB99001A4EDB /* RestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04076F023EBDB99001A4EDB /* RestCell.swift */; };
+		A04076F323EC8526001A4EDB /* RestGnavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04076F223EC8526001A4EDB /* RestGnavi.swift */; };
 		A05FAF1123E94E4B00C2039E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FAF1023E94E4B00C2039E /* AppDelegate.swift */; };
 		A05FAF1323E94E4B00C2039E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FAF1223E94E4B00C2039E /* SceneDelegate.swift */; };
 		A05FAF1523E94E4B00C2039E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FAF1423E94E4B00C2039E /* ViewController.swift */; };
 		A05FAF1823E94E4B00C2039E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05FAF1623E94E4B00C2039E /* Main.storyboard */; };
 		A05FAF1A23E94E5000C2039E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05FAF1923E94E5000C2039E /* Assets.xcassets */; };
 		A05FAF1D23E94E5000C2039E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05FAF1B23E94E5000C2039E /* LaunchScreen.storyboard */; };
+		A09A79C923F525B600C9851A /* PrefCodeGnavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A79C823F525B600C9851A /* PrefCodeGnavi.swift */; };
+		A09A79CB23F52FA300C9851A /* PrefCodeGnavi.json in Resources */ = {isa = PBXBuildFile; fileRef = A09A79CA23F52FA300C9851A /* PrefCodeGnavi.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46A687BC1F5E7FE3808D8D26 /* Pods_myBarList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myBarList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5617F964B984DC403AA5A114 /* Pods-myBarList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBarList.debug.xcconfig"; path = "Target Support Files/Pods-myBarList/Pods-myBarList.debug.xcconfig"; sourceTree = "<group>"; };
 		A04076ED23E95DD9001A4EDB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A04076F023EBDB99001A4EDB /* RestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCell.swift; sourceTree = "<group>"; };
+		A04076F223EC8526001A4EDB /* RestGnavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestGnavi.swift; sourceTree = "<group>"; };
 		A05FAF0D23E94E4B00C2039E /* myBarList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBarList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05FAF1023E94E4B00C2039E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05FAF1223E94E4B00C2039E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,9 @@
 		A05FAF1923E94E5000C2039E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05FAF1C23E94E5000C2039E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05FAF1E23E94E5000C2039E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09A79C823F525B600C9851A /* PrefCodeGnavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefCodeGnavi.swift; sourceTree = "<group>"; };
+		A09A79CA23F52FA300C9851A /* PrefCodeGnavi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PrefCodeGnavi.json; sourceTree = "<group>"; };
+		E3F035F33F01A0118225B777 /* Pods-myBarList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBarList.release.xcconfig"; path = "Target Support Files/Pods-myBarList/Pods-myBarList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1DF75947180E525D4C13EF /* Pods_myBarList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10FFEE319EDA8EE6B23CF854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5617F964B984DC403AA5A114 /* Pods-myBarList.debug.xcconfig */,
+				E3F035F33F01A0118225B777 /* Pods-myBarList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8500E45134802FFE685C1D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A687BC1F5E7FE3808D8D26 /* Pods_myBarList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A05FAF0423E94E4B00C2039E = {
 			isa = PBXGroup;
 			children = (
 				A05FAF0F23E94E4B00C2039E /* myBarList */,
 				A05FAF0E23E94E4B00C2039E /* Products */,
+				10FFEE319EDA8EE6B23CF854 /* Pods */,
+				8500E45134802FFE685C1D69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +96,12 @@
 				A05FAF1623E94E4B00C2039E /* Main.storyboard */,
 				A05FAF1923E94E5000C2039E /* Assets.xcassets */,
 				A05FAF1B23E94E5000C2039E /* LaunchScreen.storyboard */,
+				A09A79CA23F52FA300C9851A /* PrefCodeGnavi.json */,
 				A05FAF1E23E94E5000C2039E /* Info.plist */,
 				A04076ED23E95DD9001A4EDB /* SearchViewController.swift */,
+				A04076F023EBDB99001A4EDB /* RestCell.swift */,
+				A04076F223EC8526001A4EDB /* RestGnavi.swift */,
+				A09A79C823F525B600C9851A /* PrefCodeGnavi.swift */,
 			);
 			path = myBarList;
 			sourceTree = "<group>";
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A05FAF2123E94E5000C2039E /* Build configuration list for PBXNativeTarget "myBarList" */;
 			buildPhases = (
+				85EB9A2FA8F5C766AD92826D /* [CP] Check Pods Manifest.lock */,
 				A05FAF0923E94E4B00C2039E /* Sources */,
 				A05FAF0A23E94E4B00C2039E /* Frameworks */,
 				A05FAF0B23E94E4B00C2039E /* Resources */,
+				B24912BF70C6E80B860A3A19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,10 +169,53 @@
 				A05FAF1D23E94E5000C2039E /* LaunchScreen.storyboard in Resources */,
 				A05FAF1A23E94E5000C2039E /* Assets.xcassets in Resources */,
 				A05FAF1823E94E4B00C2039E /* Main.storyboard in Resources */,
+				A09A79CB23F52FA300C9851A /* PrefCodeGnavi.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85EB9A2FA8F5C766AD92826D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myBarList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24912BF70C6E80B860A3A19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myBarList/Pods-myBarList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myBarList/Pods-myBarList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myBarList/Pods-myBarList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A05FAF0923E94E4B00C2039E /* Sources */ = {
@@ -142,6 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05FAF1523E94E4B00C2039E /* ViewController.swift in Sources */,
+				A04076F323EC8526001A4EDB /* RestGnavi.swift in Sources */,
+				A04076F123EBDB99001A4EDB /* RestCell.swift in Sources */,
+				A09A79C923F525B600C9851A /* PrefCodeGnavi.swift in Sources */,
 				A05FAF1123E94E4B00C2039E /* AppDelegate.swift in Sources */,
 				A04076EE23E95DD9001A4EDB /* SearchViewController.swift in Sources */,
 				A05FAF1323E94E4B00C2039E /* SceneDelegate.swift in Sources */,
@@ -286,6 +370,7 @@
 		};
 		A05FAF2223E94E5000C2039E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5617F964B984DC403AA5A114 /* Pods-myBarList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +389,7 @@
 		};
 		A05FAF2323E94E5000C2039E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F035F33F01A0118225B777 /* Pods-myBarList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
