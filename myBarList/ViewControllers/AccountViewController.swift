@@ -17,16 +17,13 @@ class AccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.placeholder = "example@mail.com"
-        passwordTextField.placeholder = "6文字以上の半角英数字を入力してください"
+        emailTextField.textContentType = .username
+        passwordTextField.textContentType = .newPassword
+        passwordTextField.placeholder = "6文字以上の半角英数字"
+        passwordTextField.isSecureTextEntry = true
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let nextViewController = segue.destination as! SelectionViewController
-//        let user = sender as! User
-//        nextViewController.myAccount = AppUser(data: ["userID": user.uid])
-//    }
     
     @IBAction func registerAccount(_ sender: UIButton) {
         let email = emailTextField.text!
