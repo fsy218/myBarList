@@ -16,6 +16,7 @@ class RestGnavi: Object, Codable {
     @objc dynamic var category: String = ""
     @objc dynamic var url_mobile: String = ""
     @objc dynamic var shop_image1: String = ""
+    @objc dynamic var shop_image2: String = ""
     @objc dynamic var address: String = ""
     @objc dynamic var tel: String = ""
     @objc dynamic var line: String = ""
@@ -28,6 +29,7 @@ class RestGnavi: Object, Codable {
     @objc dynamic var areaname_s: String = ""
     var category_name_l = List<StringObject>()
     @objc dynamic var budget: Int = 0
+    @objc dynamic var barAccess: String = ""
     
     override public static func primaryKey() -> String? {
         return "id"
@@ -49,6 +51,7 @@ class RestGnavi: Object, Codable {
     
     private enum ImageUrlKeys: String, CodingKey {
         case shop_image1
+        case shop_image2
     }
     private enum AccessKeys: String, CodingKey {
         case line
@@ -80,6 +83,7 @@ class RestGnavi: Object, Codable {
         
         let image_url = try container.nestedContainer(keyedBy: ImageUrlKeys.self, forKey: .image_url)
         shop_image1 = try image_url.decode(String.self, forKey: .shop_image1)
+        shop_image2 = try image_url.decode(String.self, forKey: .shop_image2)
         
         let access = try container.nestedContainer(keyedBy: AccessKeys.self, forKey: .access)
         line = try access.decode(String.self, forKey: .line)
@@ -110,6 +114,7 @@ class RestGnavi: Object, Codable {
         
         var image_url = container.nestedContainer(keyedBy: ImageUrlKeys.self, forKey: .image_url)
         try image_url.encode(shop_image1, forKey: .shop_image1)
+        try image_url.encode(shop_image2, forKey: .shop_image2)
         
         var access = container.nestedContainer(keyedBy: AccessKeys.self, forKey: .access)
         try access.encode(line, forKey: .line)
