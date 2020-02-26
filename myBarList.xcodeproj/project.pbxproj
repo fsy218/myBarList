@@ -25,6 +25,7 @@
 		A0AA1EAC23F7C802006F31E5 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA1EAB23F7C802006F31E5 /* AccountViewController.swift */; };
 		A0AA1EAE23F801DC006F31E5 /* WithdrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA1EAD23F801DC006F31E5 /* WithdrawViewController.swift */; };
 		A0AA1EB023F96712006F31E5 /* MyBarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA1EAF23F96712006F31E5 /* MyBarListViewController.swift */; };
+		A0AA1EB323FBD65C006F31E5 /* RestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AA1EB223FBD65C006F31E5 /* RestCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A0AA1EAB23F7C802006F31E5 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		A0AA1EAD23F801DC006F31E5 /* WithdrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawViewController.swift; sourceTree = "<group>"; };
 		A0AA1EAF23F96712006F31E5 /* MyBarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBarListViewController.swift; sourceTree = "<group>"; };
+		A0AA1EB223FBD65C006F31E5 /* RestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestCell.xib; sourceTree = "<group>"; };
 		E3F035F33F01A0118225B777 /* Pods-myBarList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBarList.release.xcconfig"; path = "Target Support Files/Pods-myBarList/Pods-myBarList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				A04076F223EC8526001A4EDB /* RestGnavi.swift */,
 				A09A79C823F525B600C9851A /* PrefCodeGnavi.swift */,
 				A0AA1EA723F7C661006F31E5 /* AppUser.swift */,
+				A0AA1EB223FBD65C006F31E5 /* RestCell.xib */,
 			);
 			path = myBarList;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05FAF1D23E94E5000C2039E /* LaunchScreen.storyboard in Resources */,
+				A0AA1EB323FBD65C006F31E5 /* RestCell.xib in Resources */,
 				A05FAF1A23E94E5000C2039E /* Assets.xcassets in Resources */,
 				A0AA1EA623F6F5F6006F31E5 /* GoogleService-Info.plist in Resources */,
 				A05FAF1823E94E4B00C2039E /* Main.storyboard in Resources */,
