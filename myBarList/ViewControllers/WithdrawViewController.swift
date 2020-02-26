@@ -19,7 +19,8 @@ class WithdrawViewController: UIViewController {
 
         let user = Auth.auth().currentUser
         currentUserEmail.text = user?.email
-        currentUserPassword.placeholder = "6文字以上の半角英数字を入力してください"
+        currentUserPassword.placeholder = "6文字以上の半角英数字"
+        currentUserPassword.isSecureTextEntry = true
     }
     
     @IBAction func WithdrawButtonClicked(_ sender: Any) {
