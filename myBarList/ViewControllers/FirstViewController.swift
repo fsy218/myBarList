@@ -11,17 +11,25 @@ import Firebase
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var freeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if Auth.auth().currentUser != nil {
+            freeButton.isHidden = true
+        }
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let nextViewController = segue.destination as! SelectionViewController
-//        let user = sender as! User
-//        nextViewController.myAccount = AppUser(data: ["userID": user.uid])
+//        if segue.identifier == "toSelectionVC" {
+//            let nextViewController = segue.destination as! SelectionViewController
+//            let user = sender as! User
+//            nextViewController.myAccount = AppUser(data: ["userID": user.uid])
+//        }
 //    }
 
+    
     @IBAction func LoginButtonClicked(_ sender: Any) {
         if Auth.auth().currentUser != nil {
             Auth.auth().currentUser?.reload(completion: { error in
