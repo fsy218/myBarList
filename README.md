@@ -5,13 +5,13 @@
 
 大まかな機能としては「アカウント認証」「レストラン検索」「店舗情報のリスティング」が実装されています。
 
-## :iphone:Top画面
-<img src="https://user-images.githubusercontent.com/54034385/75360936-da40c400-58f9-11ea-864e-c5d44a3c9a3f.png" width=30% height=30%>
-
 ## :beers:開発環境
 * Xcode 11.3
 * Swift 5.1.3
 * Cloud Firestore
+
+## :iphone:Top画面
+<img src="https://user-images.githubusercontent.com/54034385/75360936-da40c400-58f9-11ea-864e-c5d44a3c9a3f.png" width=30% height=30%>
 
 ## :beers:アプリ機能
 **1. :lock:アカウント認証**
